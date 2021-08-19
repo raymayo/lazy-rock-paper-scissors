@@ -1,0 +1,64 @@
+$bg: #eeeeee;
+$cl: #222831;
+
+@mixin button-style {
+  border: $cl 2px solid;
+  background: $bg;
+  color: $cl;
+  font-family: "Source Code Pro", monospace;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  font-family: "Source Code Pro", monospace;
+  font-weight: 600;
+  color: $cl;
+}
+
+body {
+  background: $bg;
+}
+
+.btn-style {
+  border: $cl 2px solid;
+  border-radius: 5px;
+  color: $bg;
+  width: 6rem;
+  height: 2.5rem;
+  font-weight: 600;
+  margin: 0.5em;
+}
+
+.rockColor {
+  @include button-style;
+}
+
+.paperColor {
+  @include button-style;
+}
+
+.scissorColor {
+  @include button-style;
+}
+
+.playColor {
+  background: $cl;
+  border: $cl 2px solid;
+  color: $bg;
+  font-family: "Source Code Pro", monospace;
+}
+
+#winner {
+  font-family: "Source Code Pro", monospace;
+  font-weight: 600;
+  font-size: 40px;
+}
+
+#reset {
+  display: none;
+}
